@@ -1,0 +1,7 @@
+[32m2024-03-10 18:14:25 +0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB_0 - cf1521e1-fbd9-4e63-b5ed-e60d2abcfddf - 93753 - LOGS_CAPTURED - Started capturing logs in process (pid: 93753).
+[32m2024-03-10 18:14:25 +0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB_0 - cf1521e1-fbd9-4e63-b5ed-e60d2abcfddf - 93753 - taxi_zones - STEP_START - Started execution of step "taxi_zones".
+[32m2024-03-10 18:14:25 +0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB_0 - cf1521e1-fbd9-4e63-b5ed-e60d2abcfddf - 93753 - taxi_zones - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+[32m2024-03-10 18:14:25 +0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB_0 - cf1521e1-fbd9-4e63-b5ed-e60d2abcfddf - taxi_zones - Writing file at: /Users/ericjames/dagster_essentials_coursework/dagster_university/tmpxck4713j/storage/taxi_zones using PickledObjectFilesystemIOManager...
+[32m2024-03-10 18:14:25 +0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB_0 - cf1521e1-fbd9-4e63-b5ed-e60d2abcfddf - 93753 - taxi_zones - ASSET_MATERIALIZATION - Materialized value taxi_zones.
+[32m2024-03-10 18:14:25 +0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB_0 - cf1521e1-fbd9-4e63-b5ed-e60d2abcfddf - 93753 - taxi_zones - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2024-03-10 18:14:25 +0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB_0 - cf1521e1-fbd9-4e63-b5ed-e60d2abcfddf - 93753 - taxi_zones - STEP_SUCCESS - Finished execution of step "taxi_zones" in 138ms.

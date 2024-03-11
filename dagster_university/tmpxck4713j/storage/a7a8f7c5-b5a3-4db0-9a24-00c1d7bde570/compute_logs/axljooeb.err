@@ -1,0 +1,7 @@
+[32m2024-03-10 18:20:45 +0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB_0 - a7a8f7c5-b5a3-4db0-9a24-00c1d7bde570 - 94101 - LOGS_CAPTURED - Started capturing logs in process (pid: 94101).
+[32m2024-03-10 18:20:45 +0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB_0 - a7a8f7c5-b5a3-4db0-9a24-00c1d7bde570 - 94101 - trips_by_week - STEP_START - Started execution of step "trips_by_week".
+[32m2024-03-10 18:20:45 +0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB_0 - a7a8f7c5-b5a3-4db0-9a24-00c1d7bde570 - 94101 - trips_by_week - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+[32m2024-03-10 18:20:45 +0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB_0 - a7a8f7c5-b5a3-4db0-9a24-00c1d7bde570 - trips_by_week - Writing file at: /Users/ericjames/dagster_essentials_coursework/dagster_university/tmpxck4713j/storage/trips_by_week/2023-01-08 using PickledObjectFilesystemIOManager...
+[32m2024-03-10 18:20:45 +0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB_0 - a7a8f7c5-b5a3-4db0-9a24-00c1d7bde570 - 94101 - trips_by_week - ASSET_MATERIALIZATION - Materialized value trips_by_week.
+[32m2024-03-10 18:20:45 +0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB_0 - a7a8f7c5-b5a3-4db0-9a24-00c1d7bde570 - 94101 - trips_by_week - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2024-03-10 18:20:45 +0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB_0 - a7a8f7c5-b5a3-4db0-9a24-00c1d7bde570 - 94101 - trips_by_week - STEP_SUCCESS - Finished execution of step "trips_by_week" in 128ms.

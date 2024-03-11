@@ -1,0 +1,20 @@
+[32m2024-03-10 18:14:17 +0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB_1 - 1d7a4f11-7d5b-4cea-aaab-2b071a11f99b - 93736 - LOGS_CAPTURED - Started capturing logs in process (pid: 93736).
+[32m2024-03-10 18:14:17 +0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB_1 - 1d7a4f11-7d5b-4cea-aaab-2b071a11f99b - 93736 - taxi_trips - STEP_START - Started execution of step "taxi_trips".
+[32m2024-03-10 18:14:17 +0700[0m - dagster - [34mERROR[0m - [31m__ASSET_JOB_1 - 1d7a4f11-7d5b-4cea-aaab-2b071a11f99b - 93736 - taxi_trips - STEP_FAILURE - Execution of step "taxi_trips" failed.
+
+dagster._core.errors.DagsterExecutionStepExecutionError: Error occurred while executing op "taxi_trips"::
+
+duckdb.duckdb.ParserException: Parser Error: syntax error at or near "2023"
+
+Stack Trace:
+  File "/Users/ericjames/opt/anaconda3/lib/python3.9/site-packages/dagster/_core/execution/plan/utils.py", line 54, in op_execution_error_boundary
+    yield
+  File "/Users/ericjames/opt/anaconda3/lib/python3.9/site-packages/dagster/_utils/__init__.py", line 464, in iterate_with_context
+    next_output = next(iterator)
+  File "/Users/ericjames/opt/anaconda3/lib/python3.9/site-packages/dagster/_core/execution/plan/compute_generator.py", line 131, in _coerce_op_compute_fn_to_iterator
+    result = invoke_compute_fn(
+  File "/Users/ericjames/opt/anaconda3/lib/python3.9/site-packages/dagster/_core/execution/plan/compute_generator.py", line 125, in invoke_compute_fn
+    return fn(context, **args_to_pass) if context_arg_provided else fn(**args_to_pass)
+  File "/Users/ericjames/dagster_essentials_coursework/dagster_university/dagster_university/assets/trips.py", line 86, in taxi_trips
+    conn.execute(query)
+[0m
