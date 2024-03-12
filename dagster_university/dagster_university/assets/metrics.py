@@ -14,6 +14,9 @@ import pandas as pd
     deps=["taxi_trips", "taxi_zones"]
 )
 def manhattan_stats(database: DuckDBResource):
+    """
+    selects trips in manhattan and creates a json file with geo data
+    """
     query = """
         select
             zones.zone,
@@ -38,6 +41,9 @@ def manhattan_stats(database: DuckDBResource):
     deps=["manhattan_stats"]
 )
 def manhattan_map():
+    """
+    creates a map of trips in Manhattan using upstream manhattan_stats
+    """
     trips_by_zone = gpd.read_file(constants.MANHATTAN_STATS_FILE_PATH)
 
     fig = px.choropleth_mapbox(trips_by_zone,
@@ -80,7 +86,7 @@ def manhattan_map():
 
 @asset(
     deps=["taxi_trips"],
-    partitions_def=weekly_partition
+    partitions_def=weekly_partition,
 )
 def trips_by_week(context, database: DuckDBResource):
     """
