@@ -18,7 +18,7 @@ ___
 
 #3 Dagster adopts a unique approach to organizing data products for orchestration, replacing a task-focused method with an asset-centric one. To illustrate this, let's consider the analogy of making a sandwich:
 
-![Uploading Asset_vs_Task_Diagram.png…]()
+![Asset_vs_Task_Diagram](https://github.com/ericbjames/dagster_essentials_coursework/assets/101911329/e3373025-112d-45e3-b829-951ff2f5a06f)
 
 ___
 
