@@ -1,6 +1,5 @@
 # fmt: off
 from dagster import Definitions, load_assets_from_modules
-
 from .resources import database_resource
 from .assets import metrics, trips, requests
 from .jobs import trip_update_job, weekly_update_job, adhoc_request_job
